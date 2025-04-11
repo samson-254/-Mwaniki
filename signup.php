@@ -1,6 +1,6 @@
 <?php
 $servername = "laragon";
-$username = "David"; 
+$username = "samson"; 
 $password = "2345";
 $dbname = "users_db";
 
@@ -15,8 +15,8 @@ if ($conn->connect_error) {
 
 // Check if form data is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST['David'];
-    $email = $_POST['mwanzadavid770@gmail.com'];
+    $username = $_POST['samson'];
+    $email = $_POST['airosamson9@gmail.com'];
     $password = password_hash($_POST['2345'], PASSWORD_DEFAULT); // Hash the password for security
 
     // Prepare SQL query to insert data into users table
